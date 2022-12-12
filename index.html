@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array Of Objects</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="div">
     <p>"Question 1 : We are interested in retrieving only the name of the students and all the names should be in caps.
 
         <!-- ['JOHN', 'BABA', 'YAGA', 'WICK'] -->
@@ -64,7 +66,7 @@
         {name: 'Wick', id: 115, marks : 75 } ]
     
     
-        const=sumOfMark=[];
+        var =sumOfMark=[];
         studentRecords.map(item =>{
             sumOfMark +=item.marks
         })
@@ -93,7 +95,7 @@
         {name: 'yaga', id: 200, marks : 45 },
         {name: 'Wick', id: 115, marks : 75 } ]
     
-        const someOfMarks=[];
+        var someOfMarks=[];
         studentRecords.forEach(element =>{
             if(element.id>120){
                 someOfMarks +=(element.marks)
@@ -110,13 +112,13 @@
     
         const totalMarks=[];
         studentRecords.forEach(item =>{
-            if(element.marks < 50){
+            if(item.marks < 50){
                 item.marks +=15
             }
         })
         let gradMarks=[];
         studentRecords.forEach(item =>{
-            if(element.marks>50){
+            if(item.marks>50){
                 gradMarks +=item.marks
             }
         })
@@ -131,6 +133,7 @@
         console.log(studentRecords)
     
     </pre>
+</div>
     <script src="./main.js"></script>
 </body>
 </html>
